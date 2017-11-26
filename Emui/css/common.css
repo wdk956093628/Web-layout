@@ -1,0 +1,157 @@
+@charset "UTF-8";
+#i-header {
+  width: 100%;
+  border-bottom: 1px solid #dcdcdc;
+  background: #ffffff; }
+
+.header_content {
+  margin: auto;
+  width: 1170px;
+  height: 70px; }
+
+.header_nav {
+  float: left;
+  list-style-type: none;
+  width: auto;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 20px;
+  font-size: 16px; }
+  .header_nav_item {
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    margin: 0 20px 0 20px; }
+    .header_nav_item a {
+      color: #4a4a4a;
+      text-decoration: none; }
+      .header_nav_item a:hover {
+        color: #007dff; }
+      #header_nav_item_newFunction a {
+        color: #007dff; }
+
+.header_nav_divide {
+  margin: 5px;
+  color: #4a4a4a; }
+
+.header_logo {
+  float: left;
+  margin-top: 15px;
+  margin-right: 390px; }
+
+.header_logo_img_huawei {
+  border-right: 1px solid #cccccc;
+  padding-right: 20px; }
+
+.header_logo_img {
+  padding-left: 20px; }
+
+/*顶部导航*/
+#top-nav {
+  width: 100%;
+  height: 40px;
+  background: #4a4a4a;
+  font-size: 14px; }
+  #top-nav ul {
+    width: 1220px;
+    height: 40px;
+    margin: auto; }
+    #top-nav ul li {
+      float: left;
+      width: 106px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center; }
+      #top-nav ul li:hover .software {
+        display: block; }
+      #top-nav ul li:hover .top-triangle::before {
+        border-color: transparent transparent #fff transparent;
+        top: 3px; }
+      #top-nav ul li a {
+        color: #fff; }
+      #top-nav ul li .top-triangle {
+        position: relative; }
+      #top-nav ul li .top-triangle::before {
+        content: '';
+        position: absolute;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #fff transparent transparent transparent;
+        top: 8px;
+        right: -17px;
+        transition: all .4s ease; }
+    #top-nav ul .software {
+      display: none;
+      overflow: hidden;
+      padding: 10px 0;
+      width: 106px;
+      height: auto;
+      background: #4a4a4a;
+      position: relative;
+      z-index: 99; }
+      #top-nav ul .software li:hover {
+        background: #808080; }
+
+/*底部开始*/
+.footer {
+  width: 100%;
+  padding: 40px 0;
+  background: #4a4a4a; }
+  .footer-content {
+    position: relative;
+    margin: 0 auto;
+    width: 1175px; }
+    .footer-content span {
+      font-size: 16px;
+      color: #9b9b9b;
+      line-height: 26px;
+      margin-right: 10px; }
+    .footer-content a {
+      position: relative; }
+      .footer-content a:hover .footer_qr {
+        display: block; }
+      .footer-content a img {
+        vertical-align: bottom; }
+    .watch-us {
+      display: inline-block;
+      margin: 0 30px 20px 0; }
+    .contact-us {
+      display: inline-block; }
+      .contact-us a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 19px; }
+    .footer-content p {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: #888b8d; }
+
+.footer_qr {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  top: -175px;
+  left: -60px;
+  min-width: 140px; }
+
+/*底部logo*/
+.footer-logo {
+  position: absolute;
+  top: 45px;
+  right: 0; }
+  .footer-logo a {
+    position: relative;
+    display: inline-block;
+    margin-left: 36px; }
+    .footer-logo a:before {
+      content: '|';
+      position: absolute;
+      top: -2px;
+      left: -18px;
+      width: 1px;
+      height: 30px;
+      background: gray;
+      color: transparent; }
+
+/*# sourceMappingURL=common.css.map */

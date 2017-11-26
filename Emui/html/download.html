@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>download</title>
+    <script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/download.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cssInit.css">
+    <link rel="stylesheet" href="../css/imageSpan.css">
+    <script src="../js/tools.js"></script>
+    <script src="../js/download.js"></script>
+</head>
+<body>
+<!--头部导航-->
+<div id="i-header">
+    <!--顶部导航开始-->
+    <div id="top-nav">
+        <ul>
+            <li><a href="http://consumer.huawei.com/cn/">华为官网</a></li>
+            <li><a href="http://www.honor.cn">华为荣耀</a></li>
+            <li><a href="http://www.vmall.com/">华为商城</a></li>
+            <li><a href="http://www.vmall.com/" class="top-triangle">软件应用</a>
+                <ul class="software">
+                    <li><a href="javascript:void (0)">EMUI</a></li>
+                    <li><a href="javascript:void (0)">云服务</a></li>
+                    <li><a href="javascript:void (0)">应用市场</a></li>
+                    <li><a href="javascript:void (0)">开发者联盟</a></li>
+                </ul>
+            </li>
+            <li><a href="http://club.huawei.com/">花粉俱乐部</a></li>
+        </ul>
+    </div>
+    <!--顶部导航结束-->
+    <div class="header_content">
+
+        <div class="header_logo">
+            <img class="header_logo_img_huawei" src="../img/header_img/huwei_blue.png">
+            <a href="../html/index.html"><img class="header_logo_img" src="../img/header_img/emui_blue.png"/></a>
+        </div>
+        <ul class="header_nav text-center">
+            <li class="header_nav_item"><a href="../html/newFunction.html" rel="newFunction">新功能</a>
+            </li>
+            <li class="header_nav_item"><a href="../html/newFunction.html" rel="theme">主题</a></li>
+            <li id="header_nav_item_newFunction" class="header_nav_item"><a href="../html/download.html" rel="download">下载</a></li>
+            <li class="header_nav_item"><a href="../html/dynamic.html" rel="question">问题与窍门</a></li>
+            <li class="header_nav_item"><a href="../html/dynamic.html" rel="active">动态</a></li>
+            <li class="header_nav_item"><a href="../html/index.html" rel="language">中文</a><span
+                    class="header_nav_divide">|</span><a href="../html/index.html">EN</a></li>
+        </ul>
+    </div>
+</div>
+<!--中间部分-->
+<div id="i-body">
+    <div class="search_type">
+        <div class="search_item">
+            <div class="fi_name">品牌</div>
+            <a id="i_all" class="phone_title" href="javascript:void(0)">全部</a>
+            <a id="i_honor" class="phone_title" href="javascript:void(0)">荣耀</a>
+            <a class="phone_title" href="javascript:void(0)">华为</a>
+        </div>
+        <div class="search_item">
+            <div class="fi_name">类型</div>
+            <a class="phone_title" href="javascript:void(0)">平板</a>
+            <a class="phone_title" href="javascript:void(0)">手机</a>
+            <a class="phone_title" href="javascript:void(0)">智能路由器</a>
+            <a class="phone_title" href="javascript:void(0)">电视盒子</a>
+        </div>
+        <div class="emsearch">
+        <input id="search" class="filter_search_input" type="text" placeholder="搜索机型">
+        <!--搜索图标-->
+        <span class="filter_search_icon"></span>
+        </div>
+        <div class="em_software">
+            <a class="em_content huawei_software" href="http://appstore.huawei.com/huaweiSoft">华为软件</a>
+            <b>|</b>
+            <a class="em_content flash_tool" href="javascript:void(0)">刷机工具</a>
+            <b>|</b>
+            <a class="em_content flash_unlock" href="javascript:void(0)">刷机解锁</a>
+        </div>
+    </div>
+    <!--图文混排-->
+    <div class="download_product">
+        <div class="product_list imageSpan_container"></div>
+    </div>
+    <a class="check_more" href="javascript:void(0)">查看更多</a>
+        <div class="product_list imageSpan_container2"></div>
+        <div class="product_list imageSpan_container3"></div>
+        <div class="product_list imageSpan_container4"></div>
+        <div class="product_list imageSpan_container5"></div>
+        <div class="product_list imageSpan_container6"></div>
+        <div class="product_list imageSpan_container7"></div>
+</div>
+<!--底部开始-->
+<footer class="footer">
+    <div class="footer-content" >
+        <div class="watch-us">
+            <span>关注我们</span>
+            <a href="http://weibo.com/hwemui"><img src="../img/header_img/blog.png" alt="新浪微博"></a>
+            <a href="http://t.qq.com/emotionUI"><img src="../img/header_img/tencent.png" alt="腾讯微博"></a>
+            <a href="http://www.emui.com/cn/plugin/news/news">
+                <img class="footer_qr" src="../img/header_img/footer_qr.png" alt="二维码">
+                <img src="../img/header_img/weChat.png" alt="微信">
+            </a>
+        </div>
+        <div class="contact-us">
+            <span>联系我们</span>
+            <a href="javascript:void (0)">emuifans@huawei.com</a>
+        </div>
+        <p>© HUAWEI , 2011-2017. All Rights Reserved. (粤ICP备09176709号-16)</p>
+        <p>建议使用最新版本的Firefox、Google Chrome 浏览器，以使浏览网页有较好的效果</p>
+        <div class="footer-logo">
+            <img src="../img/header_img/huawei_white.png" alt="华为logo">
+            <a href="index.html"><img src="../img/header_img/emui_white.png" alt="emui"></a>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="../js/imageSpan.js"></script>
+</html>

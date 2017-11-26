@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+$height: 40px;
+$width: 1170px;
+
+@mixin logo($color:rgba(0,0,0,.1),$line-top:-10px,$line-h:46px) {
+  position: relative;
+  display: inline-block;
+  margin-left: 36px;
+  &:before {
+    content: '|';
+    position: absolute;
+    top: $line-top;
+    left: -18px;
+    width: 1px;
+    height: $line-h;
+    background: $color;
+    color: transparent;
+  }
+}
+#i-header{
+  width: 100%;
+  border-bottom: 1px solid #dcdcdc;
+  background: #ffffff;
+}
+.header_content{
+  margin: auto;
+  width: 1170px;
+  height: 70px;
+}
+.header_nav{
+  float: left;
+  list-style-type: none;
+  width: auto;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 20px;
+  font-size: 16px;
+  @at-root .header_nav_item{
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    margin: 0 20px 0 20px;
+    a{
+      color: #4a4a4a;
+      text-decoration: none;
+      &:hover{
+        color: #007dff;
+      }
+      @at-root #header_nav_item_newFunction a{
+        color: #007dff;
+      }
+    }
+  }
+}
+.header_nav_divide{
+  margin: 5px;
+  color: #4a4a4a;
+}
+.header_logo{
+  float: left;
+  margin-top: 15px;
+  margin-right: 390px;
+}
+.header_logo_img_huawei{
+  border-right: 1px solid #cccccc;
+  padding-right:20px ;
+}
+.header_logo_img{
+  padding-left: 20px;
+}
+/*顶部导航*/
+#top-nav {
+  width: 100%;
+  height: $height;
+  background: #4a4a4a;
+  font-size: 14px;
+  ul {
+    width: 1220px;
+    height: 40px;
+    margin: auto;
+    li {
+      float: left;
+      width: 106px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      &:hover .software {
+        display: block;
+      }
+      &:hover .top-triangle::before {
+        border-color: transparent transparent #fff transparent;
+        top: 3px;
+      }
+      a {
+        color: #fff;
+      }
+      .top-triangle {
+        position: relative
+      }
+      .top-triangle::before {
+        content: '';
+        position: absolute;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #fff transparent transparent transparent;
+        top: 8px;
+        right: -17px;
+        transition: all .4s ease;
+      }
+    }
+    .software {
+      display: none;
+      overflow: hidden;
+      padding: 10px 0;
+      width: 106px;
+      height: auto;
+      background: #4a4a4a;
+      position: relative;
+      z-index: 99;
+      li {
+        &:hover {
+          background: #808080;
+        }
+      }
+    }
+  }
+}
+/*底部开始*/
+.footer {
+  width: 100%;
+  padding: 40px 0;
+  background: #4a4a4a;
+  @at-root .footer-content {
+    position: relative;
+    margin: 0 auto;
+    width: 1175px;
+    span {
+      font-size: 16px;
+      color: #9b9b9b;
+      line-height: 26px;
+      margin-right: 10px;
+    }
+
+    a {
+      position: relative;
+      &:hover .footer_qr{
+        display: block;
+      }
+      img {
+        vertical-align: bottom;
+      }
+    }
+
+    @at-root .watch-us {
+      display: inline-block;
+      margin: 0 30px 20px 0;
+    }
+    @at-root .contact-us {
+      display: inline-block;
+      a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 19px;
+      }
+    }
+    p {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: #888b8d;
+    }
+  }
+}
+
+.footer_qr{
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  top:-175px;
+  left: -60px;
+  min-width: 140px;
+}
+
+/*底部logo*/
+.footer-logo {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  a {
+    @include logo(gray, -2px, 30px)
+  }
+}

@@ -1,0 +1,381 @@
+﻿@charset "UTF-8";
+
+$height: 40px;
+$width: 1170px;
+
+@mixin logo($color:rgba(0,0,0,.1),$line-top:-10px,$line-h:46px) {
+  position: relative;
+  display: inline-block;
+  margin-left: 36px;
+  &:before {
+    content: '|';
+    position: absolute;
+    top: $line-top;
+    left: -18px;
+    width: 1px;
+    height: $line-h;
+    background: $color;
+    color: transparent;
+  }
+}
+
+//顶部导航
+#top-nav {
+  width: 100%;
+  height: $height;
+  background: #4a4a4a;
+  font-size: 14px;
+  ul {
+    width: 1200px;
+    height: 40px;
+    margin: auto;
+    li {
+      float: left;
+      width: 106px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      &:hover .software {
+        display: block;
+      }
+      &:hover .top-triangle::before {
+        border-color: transparent transparent #fff transparent;
+        top: 3px;
+      }
+      a {
+        color: #fff;
+      }
+      .top-triangle {
+        position: relative
+      }
+      .top-triangle::before {
+        content: '';
+        position: absolute;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #fff transparent transparent transparent;
+        top: 8px;
+        right: -17px;
+        transition: all .4s ease;
+      }
+    }
+     .software {
+       position: relative;
+      display: none;
+      overflow: hidden;
+      padding: 10px 0;
+      width: 106px;
+       height: auto;
+      background: #4a4a4a;
+       z-index: 999;
+      li {
+        &:hover {
+          background: #808080;
+        }
+      }
+    }
+  }
+}
+
+//网页头部
+#dynamic-header {
+  height: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  .header-content {
+    width: $width;
+    height: 40px;
+    margin: 0 auto;
+    padding: 15px 0;
+    transition: all .5s ease;
+  }
+}
+
+
+
+
+//头部logo
+.header-logo {
+  float: left;
+  margin-left: 10px;
+  a {
+    @include logo()
+  }
+}
+
+//头部导航
+.header-nav {
+  float: right;
+  margin: 10px 0;
+  li {
+    float: left;
+    margin: 0 20px;
+    a {
+      color: #4a4a4a;
+      &:hover{
+        color: #007dff;
+      }
+    }
+    .active {
+      color: #007dff;
+    }
+    span {
+      color: #4a4a4a;
+      margin: 5px;
+    }
+  }
+}
+
+//轮播部分
+#dynamic-slide{
+  margin: 20px auto;
+  width: 1200px;
+  height: 450px;
+  .slide_left{
+    position: absolute;
+  }
+  .slide_right{
+    position: absolute;
+    right: 300px;
+  }
+}
+
+//媒体部分
+#dynamic-media {
+  padding: 20px 0;
+  width: 100%;
+  background: #eff8ff;
+  //点击滑动
+  @at-root .media-show {
+    position: relative;
+    margin:30px auto 0;
+    width: 1200px;
+    height: 270px;
+    .show-item{
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .2s ease-in;
+      @at-root .show-img{
+        float: left;
+        width: 36%;
+        text-align: right;
+        img{
+          line-height: 0;
+          width: 32%;
+        }
+      }
+      a{
+       @at-root .show-info{
+          float: left;
+          width: 32%;
+          margin-left: 5%;
+          color: #1d1d1d;
+          font-size: 16px;
+          span{
+            margin-right: 20px;
+            font-size: 24px;
+            font-weight:bold;
+          }
+          p{
+            margin-bottom: 18px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .on_show{opacity: 0}
+
+    @at-root .adver-arrow{
+      cursor: pointer;
+      .show-left{
+        position: absolute;
+        top: 20%;
+        left:10%;
+      }
+      .show-right{
+        position: absolute;
+        top:20%;
+        right: 10%;
+      }
+    }
+  }
+
+  //三块广告区域
+  @at-root .media-list {
+    margin: auto;
+    width: 1200px;
+    font-size: 0;
+    overflow: hidden;
+   @at-root .adver-item {
+      float: left;
+      margin: 0 15px;
+      a {
+        img {
+        }
+        @at-root .adver-foot {
+          font-size: 16px;
+          color: #fff;
+          background: #1681fb;
+          padding: 20px 40px;
+          letter-spacing: 2px;
+          position: relative;
+          width: 288px;
+          height: 82px;
+          overflow: hidden;
+
+          p {
+            margin: 2px 0;
+          }
+
+          span {
+            color: #d7d9d9;
+          }
+        }
+      }
+    }
+  }
+}
+
+//漫画板块
+.comic {
+  width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+  @at-root .comic-item {
+    float: left;
+    margin: 5px 13px;
+    position: relative;
+    overflow: hidden;
+    a {
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    //  遮罩
+    .comic-mask {
+      background-color: rgba(33, 135, 251, 0.7);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      color: #fff;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+
+      h4 {
+        line-height: 30px;
+        padding-top: 50px;
+      }
+      p {
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    &:hover .comic-mask {
+      bottom: 0;
+    }
+  }
+}
+
+//互动板块
+
+.interaction {
+  width: 100%;
+  @at-root  .interaction-item {
+    overflow: hidden;
+    width: 1200px;
+    display: block;
+    margin: 20px auto;
+    height: 555px;
+    cursor: pointer;
+    img {
+      display: block;
+      margin-top: 70px;
+    }
+  }
+  .why {
+    background: url("../img/dynamic/interaction-bg1.jpg") no-repeat top center;
+    img {
+      margin-left: 45%;
+    }
+  }
+  .who {
+    background: url("../img/dynamic/interaction-bg2.jpg") no-repeat top center;
+    img {
+      padding-top: 20px;
+      margin-left: 8%;
+    }
+  }
+}
+
+//底部开始
+.footer {
+  width: 100%;
+  padding: 40px 0;
+  background: #4a4a4a;
+  @at-root .footer-content {
+    position: relative;
+    margin: 0 auto;
+    width: 1175px;
+    span {
+      font-size: 16px;
+      color: #9b9b9b;
+      line-height: 26px;
+      margin-right: 10px;
+    }
+
+    a {
+      position: relative;
+
+      &:hover .footer_qr{
+        display: block;
+      }
+      img {
+        vertical-align: bottom;
+      }
+    }
+
+    @at-root .watch-us {
+      display: inline-block;
+      margin: 0 30px 20px 0;
+    }
+    @at-root .contact-us {
+      display: inline-block;
+      a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 19px;
+      }
+    }
+    p {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: #888b8d;
+    }
+  }
+}
+
+.footer_qr{
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  top:-175px;
+  left: -60px;
+  min-width: 140px;
+}
+
+//底部logo
+.footer-logo {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  a {
+    @include logo(gray, -2px, 30px)
+  }
+}

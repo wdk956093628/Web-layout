@@ -1,0 +1,297 @@
+@charset "UTF-8";
+$color_blue: #007dff;
+$color_black: #000;
+$color_waite: #fff;
+$color_darkGray: #4a4a4a;
+@mixin bg {
+  background-size: contain;
+  background-position: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "YaHei";
+
+}
+a{
+  text-decoration: none;
+  color: $color_blue;
+  &:hover{
+    text-decoration: none;
+    color: $color_blue;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;  }
+
+//第一屏
+.index-first-screen {
+  text-align: center;
+  padding: 85px 0 236px;
+  background: url("../img/index_img/index-bottom-grain.png") no-repeat center bottom;
+  .index-bigLogo {
+    height: 500px;
+    background: url("../img/index_img/index-emui5.1.png") no-repeat center;
+  }
+  .index-look {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: $color_blue;
+    line-height: 2.4rem;
+    margin-top: 4rem;
+    cursor: pointer;
+    img {
+      width: 24px;
+      margin-left: 4px;
+    }
+  }
+}
+
+//每屏文字
+.index-description {
+  position: absolute;
+  margin-top: 15%;
+  color: $color_waite;
+  h1 {
+    font-size: 42px;
+  }
+  p {
+    width: 500px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 40px;
+  }
+  .btn {
+    display: inline-block;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid $color_blue;
+    border-radius: 87px;
+    font-size: 16px;
+    text-align: center;
+    color: $color_blue;
+    line-height: 50px;
+    position: relative;
+    background: rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+}
+
+//每屏样式
+.index-screen {
+  height: 900px;
+  overflow: hidden;
+}
+
+//分屏背景及文字位置
+.index-second-screen {
+  background: $color_black url("../img/index_img/index-brief-mutual-en.png") center no-repeat;
+  .index-description {
+    left: 22%;
+  }
+}
+
+.index-third-screen {
+  background: #141a2a url("../img/index_img/index-fast-experience.png") center no-repeat;
+  .index-description {
+    right: 22%;
+  }
+}
+
+.index-fourth-screen {
+  background: $color_black url("../img/index_img/index-wisdim-service.png") center no-repeat;
+
+  .index-description {
+    left: 22%;
+  }
+}
+
+//实用贴士
+.index-fifth-screen {
+  padding: 135px 0 94px;
+  background: #f8f8f8;
+  .index-tips-title {
+    font-size: 55px;
+    color: $color_darkGray;
+  }
+  .index-choose {
+    color: #808080;
+  }
+  ul {
+    .index-choose-option {
+      display: inline-block;
+      font-size: 22px;
+      padding: 10px;
+      margin: 15px;
+      border-bottom: darkgray 2px solid;
+      list-style-type: none;
+    }
+
+  }
+
+  //切换第一部分
+  //  大框框
+  .index-question-list {
+    margin: auto;
+    padding: 5px 0;
+    width: 1122px;
+    height: 800px;
+    overflow: hidden;
+
+    //    超长框
+
+    .index-switchover {
+      width: 3370px;
+      height: 490px;
+      position:relative;
+      left: 0;
+
+
+      //    小框框
+      .index-slide {
+        display: inline-block;
+        width: 350px;
+        height: 495px;
+        background: #ffffff;
+        margin: 0 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 0 gray;
+
+        .index-slide-pic {
+          width: 100%;
+          height: 185px;
+        }
+        //      前置导航键
+        #index-slide-navbtn {
+          background: url("../img/index_img/index-naigation_key.png") no-repeat;
+          @include bg;
+        }
+        //      精彩时刻
+        #index-slide-moment {
+          background: url("../img/index_img/index-jingcai.jpg") no-repeat;
+          @include bg;
+        }
+        //      人像
+        #index-slide-camera {
+          background: url("../img/index_img/index-renxiang.png") no-repeat;
+          @include bg;
+        }
+        //      二维码
+        #index-slide-QRcode {
+          background: url("../img/index_img/index-scan.png") no-repeat;
+          @include bg;
+        }
+        //      在线翻译
+        #index-slide-translation {
+          background: url("../img/index_img/index-scan_translation.png") no-repeat;
+          @include bg;
+        }
+        //      在线解题
+        #index-slide-subject {
+          background: url("../img/index_img/index-scan_subject.png") no-repeat;
+          @include bg;
+        }
+        //应用分身
+        #index-slide-cloned {
+          background: url("../img/index_img/index-scan_cloned.png") no-repeat;
+          @include bg;
+        }
+        //隐私空间
+        #index-slide-privacy {
+          background: url("../img/index_img/index-scan_privacy.png") no-repeat;
+          @include bg;
+        }
+        //桌面切换
+        #index-slide-desktop {
+          background: url("../img/index_img/index-scan_desktop.png") no-repeat;
+          @include bg;
+        }
+      }
+      .index-list-title {
+        color: $color_blue;
+        font-size: 20px;
+        margin: 30px 10px 0 30px;
+      }
+      .index-specification {
+        width: 100%;
+        height: 250px;
+        padding: 18px 35px 0 35px;
+        font-size: 15px;
+        line-height: 26px;
+        overflow: hidden;
+        &:hover {
+          overflow: auto;
+        }
+        //        小小小图标
+        img {
+          height: 12px;
+          width: 18px;;
+        }
+        ul {
+          li {
+            margin-left: 20px;
+            list-style-type: disc;
+          }
+        }
+        ol {
+          li {
+            margin-left: 20px;
+          }
+        }
+
+      }
+
+    }
+    #index-tips_1 {
+      display: block;
+    }
+    #index-tips_2 {
+      .index-specification {
+        height: 490px;
+      }
+      display: none;
+    }
+    .index-search{
+       text-align: center;
+       margin:50px ;
+       .index-know{
+         font-size: 28px;
+         color: #4a4a4a;
+         line-height: 26px;
+         font-weight: 100;
+         margin-top: 100px;
+         margin-bottom: 30px;
+       }
+       .index-searchBox{
+         letter-spacing: 1px;
+         width: 500px;
+         border-radius: 30px;
+         height: 40px;
+         padding-right: 50px;
+         padding-left: 30px;
+         margin-bottom: 20px;
+         border: 2px solid #9b9b9b;
+         font-size: 16px;
+         color: #9b9b9b;
+         line-height: 39px;
+         box-sizing: border-box;
+         outline: none;
+         background-color: #fff;
+       }
+       .index-search-more{
+         line-height: 30px;
+         color: $color_blue;
+       }
+     }
+  }
+
+
+}
+

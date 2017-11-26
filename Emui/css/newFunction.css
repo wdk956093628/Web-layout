@@ -1,0 +1,459 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei"; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+body {
+  height: 100vh; }
+
+/*中间部分*/
+#i-body {
+  width: 100%;
+  height: auto; }
+
+/*中间部分第一屏*/
+.first_screen {
+  width: 100%;
+  height: auto;
+  background: url("../img/newFunction_img/5.1_bg.png") no-repeat center bottom;
+  padding: 186px 0 320px; }
+
+.first_screen_img {
+  width: 280px;
+  margin: 0 auto 70px auto; }
+
+.first_screen_content {
+  text-align: center;
+  margin: 0 auto 32px;
+  font-size: 16px;
+  color: #4A4A4A;
+  line-height: 26px; }
+
+/*第一屏副导航吸顶*/
+.first_screen_subnav[data-fixed="fixed"] {
+  position: fixed;
+  top: 0; }
+
+.first_screen_subnav {
+  width: 100%;
+  height: 56px;
+  margin: auto;
+  padding: 10px 0;
+  background: #fff;
+  position: absolute;
+  z-index: 999; }
+
+.first_screen_subnav_item {
+  display: inline-block;
+  margin: 0 80px 0 80px;
+  position: static;
+  z-index: 999; }
+  .first_screen_subnav_item a {
+    color: #4A4A4A;
+    text-decoration: none; }
+
+/*中间部分第二屏*/
+.second_screen {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  text-align: center;
+  background: #000000; }
+  .second_screen img {
+    margin-top: 50px; }
+  .second_screen h1 {
+    font-size: 54px;
+    margin: 10px auto 0; }
+  .second_screen p {
+    font-size: 16px;
+    margin: 20px auto 10px; }
+
+#second_screen_text {
+  width: 100%;
+  color: #fff;
+  margin-top: 80px;
+  position: absolute; }
+
+/*中间部分第三屏*/
+.third_screen {
+  padding: 100px 0 60px;
+  color: #fff;
+  background: #161726; }
+  .third_screen h1 {
+    margin: 0 0 10px 0;
+    font-size: 45px; }
+  .third_screen p {
+    font-size: 16px;
+    margin: 20px auto 10px; }
+
+.third_screen_video_touch {
+  width: 1170px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center; }
+
+.third_screen_video_item {
+  float: left;
+  width: 350px;
+  height: 620px;
+  margin: 0 30px 15px 0; }
+
+/*中间部分第四屏*/
+.four_screen {
+  width: 100%;
+  padding: 113px 0 30px 0; }
+
+.four_screen_content {
+  margin: auto;
+  width: 1160px;
+  position: relative;
+  overflow: hidden; }
+
+#four_screen_content_two {
+  position: relative;
+  top: -80px; }
+
+#four_screen_content_three {
+  position: relative;
+  top: -80px; }
+
+.four_screen_text {
+  display: inline-block;
+  width: 500px;
+  height: 150px;
+  margin-right: 220px;
+  vertical-align: middle; }
+  .four_screen_text h1 {
+    font-size: 40px;
+    font-weight: 100; }
+  .four_screen_text p {
+    font-size: 16px;
+    line-height: 26px; }
+
+#four_screen_text_two {
+  margin: 0 0 0 220px; }
+
+.four_screen_bg {
+  width: 310px;
+  height: 658px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.four_screen_video {
+  width: 287px;
+  height: 638px;
+  position: absolute;
+  right: 139px; }
+
+#four_screen_video_two {
+  position: absolute;
+  left: 10px; }
+
+/*中间部分第五屏*/
+.five_screen {
+  width: 100%;
+  height: 600px;
+  overflow: hidden; }
+  .five_screen_content {
+    position: relative;
+    width: 60%;
+    margin: 0 auto; }
+    .five_screen_text {
+      position: absolute;
+      margin-top: 220px;
+      width: 100%;
+      color: #FFFFFF; }
+    .five_screen_content h1 {
+      font-size: 54px;
+      font-weight: 100;
+      margin: 10px auto 0; }
+    .five_screen_content p {
+      font-size: 16px;
+      line-height: 26px;
+      margin: 30px 180px auto 180px; }
+
+/*中间部分第六屏*/
+.six_screen {
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background: #141A2A; }
+
+.six_screen_content {
+  position: relative;
+  width: 60%;
+  margin: 0 auto; }
+  .six_screen_text {
+    position: absolute;
+    margin-top: 8%;
+    width: 100%;
+    color: #FFFFFF; }
+    .six_screen_system {
+      position: relative;
+      display: inline-block; }
+      .six_screen_bg {
+        width: 100%; }
+      .six_screen_system h2 {
+        font-size: 40px;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #007DFF;
+        font-weight: 100; }
+      .six_screen_system span {
+        position: absolute;
+        font-size: 16px;
+        color: #007DFF; }
+      .six_screen_system span:nth-of-type(1) {
+        left: -110px;
+        top: 44%; }
+      .six_screen_system span:nth-of-type(2) {
+        right: -110px;
+        top: 44%; }
+      .six_screen_system span:nth-of-type(3) {
+        left: 50%;
+        bottom: -30px;
+        margin-left: -48px; }
+      .look_video_icon {
+        width: 24px;
+        margin-left: 4px; }
+      .look_video a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        color: #007DFF;
+        line-height: 26px;
+        margin-bottom: 30px; }
+  .six_screen_content h1 {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 10px auto 0; }
+  .six_screen_content p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px 50px 10px 50px; }
+/*中间部分第七屏*/
+.seven_screen {
+  width: 100%;
+  padding-top: 103px; }
+  .seven_screen_content {
+    position: relative;
+    width: 60%;
+    margin: 0 auto; }
+    .seven_screen_content h1 {
+      font-size: 45px;
+      font-weight: 100;
+      margin: 10px auto 0; }
+    .seven_screen_content p {
+      font-size: 16px;
+      line-height: 26px;
+      margin: 30px 60px 10px 60px; }
+
+/*中间部分第八屏*/
+.eight_screen {
+  text-align: center;
+  overflow: hidden; }
+  .eight_screen_content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; }
+    .eight_screen_text {
+      position: absolute;
+      margin-top: 7%;
+      width: 72%;
+      color: #4A4A4A;
+      right: 0; }
+      .eight_screen_text h1 {
+        font-size: 45px;
+        margin: 10px auto 0;
+        max-width: 666px; }
+      .eight_screen_text p {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 30px auto 10px;
+        max-width: 650px; }
+
+/*中间部分第九屏*/
+.nine_screen {
+  text-align: left;
+  overflow: hidden; }
+  .nine_screen_content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; }
+    .nine_screen_text {
+      position: absolute;
+      margin-top: 17%;
+      width: 500px;
+      color: #fff;
+      right: 50%; }
+      .nine_screen_text h1 {
+        font-size: 45px;
+        margin: 10px auto 0;
+        max-width: 666px; }
+      .nine_screen_text p {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 30px auto 10px;
+        max-width: 800px; }
+  .nine_screen_img {
+    position: absolute;
+    right: 350px;
+    margin-top: 9%;
+    width: 30%; }
+
+/*中间部分第十屏*/
+.ten_screen {
+  height: 600px;
+  overflow: hidden;
+  background: #000000; }
+  .ten_screen_content {
+    position: absolute;
+    text-align: center;
+    margin-top: 220px;
+    left: 0;
+    color: #FFFFFF;
+    width: 100%; }
+  .ten_screen h1 {
+    font-size: 54px;
+    margin: 10px auto 0; }
+  .ten_screen p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px auto 10px;
+    max-width: 800px; }
+  .ten_screen img {
+    vertical-align: bottom; }
+
+/*中间部分第十一屏*/
+.eleven_screen {
+  padding: 73px 0 150px;
+  text-align: center;
+  color: #4A4A4A;
+  overflow: hidden;
+  position: relative; }
+  .eleven_screen h1 {
+    font-size: 40px;
+    margin: 10px auto 0; }
+  .eleven_screen h3 {
+    font-size: 24px;
+    margin: 20px auto 10px; }
+  .eleven_screen p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px auto 10px;
+    max-width: 800px; }
+  .eight_screen_bg {
+    margin-top: 110px; }
+  .eleven_screen_bg_video {
+    width: 317px;
+    position: absolute;
+    left: 420px;
+    margin-top: 50px;
+    z-index: 100; }
+  .eleven_screen video {
+    width: 298px;
+    position: absolute;
+    top: 402px;
+    left: 428px;
+    z-index: 101; }
+
+/*中间部分第十二屏*/
+.twelve_screen {
+  text-align: center;
+  height: 950px;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  padding: 70px 0 50px;
+  background: #162546 url("../img/newFunction_img/12bg.png") no-repeat left 70%; }
+  .twelve_screen h1 {
+    font-size: 40px;
+    margin: 10px auto 0; }
+  .twelve_screen h3 {
+    font-size: 24px;
+    margin: 20px auto 10px; }
+  .twelve_screen p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px auto 10px;
+    max-width: 800px; }
+  .twelve_screen_bg {
+    position: relative;
+    margin-top: 110px; }
+
+/*中间部分第十三屏*/
+.thirty_screen {
+  text-align: center;
+  height: 800px;
+  overflow: hidden;
+  position: relative; }
+  .thirty_screen_content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 55%;
+    margin: 0 auto; }
+  .thirty_screen h1 {
+    font-size: 45px;
+    margin: 10px auto 0; }
+  .thirty_screen h3 {
+    font-size: 40px;
+    margin: 20px auto 10px; }
+  .thirty_screen p {
+    width: 800px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px auto 10px;
+    max-width: 800px; }
+
+.switch_img {
+  width: 1020px;
+  text-align: center;
+  margin: auto; }
+  .switch_img div {
+    float: left;
+    margin: 0 50px;
+    background: #162546; }
+    .switch_img div img {
+      opacity: 2; }
+
+.switch_img_text {
+  text-align: center;
+  max-width: 330px;
+  margin: 40px auto 0;
+  font-size: 0; }
+  .switch_img_text a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px; }
+  .switch_img_text a:nth-of-type(1) {
+    border: 1px solid #fff;
+    border-right: initial;
+    border-radius: 20px 0 0 20px; }
+  .switch_img_text a:nth-of-type(2) {
+    border: 1px solid #fff; }
+  .switch_img_text a:nth-of-type(3) {
+    border: 1px solid #fff;
+    border-left: none;
+    border-radius: 0 20px 20px 0; }
+
+.on_swicth:hover {
+  background: #fff;
+  color: #00b3ee; }
+
+/*文字动画*/
+
+/*# sourceMappingURL=newFunction.css.map */

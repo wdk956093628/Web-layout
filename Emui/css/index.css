@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "YaHei"; }
+
+a {
+  text-decoration: none;
+  color: #007dff; }
+  a:hover {
+    text-decoration: none;
+    color: #007dff; }
+
+html {
+  font-size: 10px; }
+
+body {
+  width: 100%; }
+
+.index-first-screen {
+  text-align: center;
+  padding: 85px 0 236px;
+  background: url("../img/index_img/index-bottom-grain.png") no-repeat center bottom; }
+  .index-first-screen .index-bigLogo {
+    height: 500px;
+    background: url("../img/index_img/index-emui5.1.png") no-repeat center; }
+  .index-first-screen .index-look {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #007dff;
+    line-height: 2.4rem;
+    margin-top: 4rem;
+    cursor: pointer; }
+    .index-first-screen .index-look img {
+      width: 24px;
+      margin-left: 4px; }
+
+.index-description {
+  position: absolute;
+  margin-top: 15%;
+  color: #fff; }
+  .index-description h1 {
+    font-size: 42px; }
+  .index-description p {
+    width: 500px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 40px; }
+  .index-description .btn {
+    display: inline-block;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid #007dff;
+    border-radius: 87px;
+    font-size: 16px;
+    text-align: center;
+    color: #007dff;
+    line-height: 50px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    padding: 0 30px; }
+
+.index-screen {
+  height: 900px;
+  overflow: hidden; }
+
+.index-second-screen {
+  background: #000 url("../img/index_img/index-brief-mutual-en.png") center no-repeat; }
+  .index-second-screen .index-description {
+    left: 22%; }
+
+.index-third-screen {
+  background: #141a2a url("../img/index_img/index-fast-experience.png") center no-repeat; }
+  .index-third-screen .index-description {
+    right: 22%; }
+
+.index-fourth-screen {
+  background: #000 url("../img/index_img/index-wisdim-service.png") center no-repeat; }
+  .index-fourth-screen .index-description {
+    left: 22%; }
+
+.index-fifth-screen {
+  padding: 135px 0 94px;
+  background: #f8f8f8; }
+  .index-fifth-screen .index-tips-title {
+    font-size: 55px;
+    color: #4a4a4a; }
+  .index-fifth-screen .index-choose {
+    color: #808080; }
+  .index-fifth-screen ul .index-choose-option {
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px;
+    margin: 15px;
+    border-bottom: darkgray 2px solid;
+    list-style-type: none; }
+  .index-fifth-screen .index-question-list {
+    margin: auto;
+    padding: 5px 0;
+    width: 1122px;
+    height: 800px;
+    overflow: hidden; }
+    .index-fifth-screen .index-question-list .index-switchover {
+      width: 3370px;
+      height: 490px;
+      position: relative;
+      left: 0; }
+      .index-fifth-screen .index-question-list .index-switchover .index-slide {
+        display: inline-block;
+        width: 350px;
+        height: 495px;
+        background: #ffffff;
+        margin: 0 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 0 gray; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide .index-slide-pic {
+          width: 100%;
+          height: 185px; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-navbtn {
+          background: url("../img/index_img/index-naigation_key.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-moment {
+          background: url("../img/index_img/index-jingcai.jpg") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-camera {
+          background: url("../img/index_img/index-renxiang.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-QRcode {
+          background: url("../img/index_img/index-scan.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-translation {
+          background: url("../img/index_img/index-scan_translation.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-subject {
+          background: url("../img/index_img/index-scan_subject.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-cloned {
+          background: url("../img/index_img/index-scan_cloned.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-privacy {
+          background: url("../img/index_img/index-scan_privacy.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+        .index-fifth-screen .index-question-list .index-switchover .index-slide #index-slide-desktop {
+          background: url("../img/index_img/index-scan_desktop.png") no-repeat;
+          background-size: contain;
+          background-position: center; }
+      .index-fifth-screen .index-question-list .index-switchover .index-list-title {
+        color: #007dff;
+        font-size: 20px;
+        margin: 30px 10px 0 30px; }
+      .index-fifth-screen .index-question-list .index-switchover .index-specification {
+        width: 100%;
+        height: 250px;
+        padding: 18px 35px 0 35px;
+        font-size: 15px;
+        line-height: 26px;
+        overflow: hidden; }
+        .index-fifth-screen .index-question-list .index-switchover .index-specification:hover {
+          overflow: auto; }
+        .index-fifth-screen .index-question-list .index-switchover .index-specification img {
+          height: 12px;
+          width: 18px; }
+        .index-fifth-screen .index-question-list .index-switchover .index-specification ul li {
+          margin-left: 20px;
+          list-style-type: disc; }
+        .index-fifth-screen .index-question-list .index-switchover .index-specification ol li {
+          margin-left: 20px; }
+    .index-fifth-screen .index-question-list #index-tips_1 {
+      display: block; }
+    .index-fifth-screen .index-question-list #index-tips_2 {
+      display: none; }
+      .index-fifth-screen .index-question-list #index-tips_2 .index-specification {
+        height: 490px; }
+    .index-fifth-screen .index-question-list .index-search {
+      text-align: center;
+      margin: 50px; }
+      .index-fifth-screen .index-question-list .index-search .index-know {
+        font-size: 28px;
+        color: #4a4a4a;
+        line-height: 26px;
+        font-weight: 100;
+        margin-top: 100px;
+        margin-bottom: 30px; }
+      .index-fifth-screen .index-question-list .index-search .index-searchBox {
+        letter-spacing: 1px;
+        width: 500px;
+        border-radius: 30px;
+        height: 40px;
+        padding-right: 50px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        border: 2px solid #9b9b9b;
+        font-size: 16px;
+        color: #9b9b9b;
+        line-height: 39px;
+        box-sizing: border-box;
+        outline: none;
+        background-color: #fff; }
+      .index-fifth-screen .index-question-list .index-search .index-search-more {
+        line-height: 30px;
+        color: #007dff; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,246 @@
+			*{
+				margin: auto;
+				padding: 0px;
+				font-size: 14px;
+				font-family: "微软雅黑";
+			}
+			
+			/*顶部样式*/
+			#top{
+				width: 1350px;
+				height: 39px;
+			}
+			
+			li{list-style-type: none;}
+			
+			#top ul{
+				float:right;
+				position: relative;
+				top: 10px;
+				left: -200px;
+			}
+			
+			#top ul li{
+				float: left;
+				margin-left: 10px;
+				font-size: 12px;
+				color: gray;
+				text-align: center;
+			}			
+			/*导航栏样式*/		
+			#head{
+				width: 1350px;
+				height: 90px;
+				border-top:1px #ccc solid ;
+			}
+			
+			#head img{
+				float: left;
+				margin: 25px 40px 25px 120px;
+			}
+			
+			#head ul li{
+				float: left;
+				width: 108px;
+				line-height: 90px;
+				text-align: center;
+			}
+			
+			.add{
+				display: block;
+				position: relative;
+				top: -62px;
+				left: -5px;
+				height: 12px;
+				line-height: 12px;
+			}
+			
+			/*二级菜单*/
+			#head ul li ul{
+				position: relative;
+				top: -20px;
+				left: 20px;
+				display: none;
+				width: 210px;
+				height: 418px;
+				color: #fff;
+				background-color: #666;
+				opacity:0.9;
+			}
+			
+			#head ul li ul li{
+				margin: 0px 15px;
+				width: 180px;
+				line-height: 25px;
+				text-align: left;
+			}
+			
+			#head ul li ul .download{
+				line-height: 38px;
+				border-bottom: 1px solid #CCCCCC;
+			}
+			
+			#head ul li ul .enterprise_products{
+				line-height: 38px;
+				border-bottom: 1px solid #CCCCCC;
+			}
+			
+			#head .enterprise{
+				width: 210px;
+				height: 99px;
+			}
+			
+			#head ul li:hover ul{
+				display: block;
+			}
+					
+			/*小图标*/				
+			#head .hot{
+				display: block;
+				position: relative;
+				top: -62px;
+				left: 40px;
+				width: 25px;
+				height: 10px;
+				background:url(../img/new.gif)
+			}
+			
+			#head .new{
+				display: inline-block;
+				margin-top: 10px;
+				margin-left: 5px;
+				width: 25px;
+				height: 10px;
+				background:url(../img/new.gif)
+			}		
+			
+			/*宣传图片*/								
+			#adver{
+				width: 1350px;
+				height: 452px;
+				background: url(../img/banner.png);
+				background-size: cover;
+				
+			}
+			
+			#adver .sidebar{
+				position: fixed;
+				margin-top: -100px;
+				top: 50%;
+				right: 0px;
+				width: 30px;
+				height: 196px;	
+				background-color: #5e9eff;
+				border: 1px #4f7aeb solid;		
+			}
+			
+			#adver img{
+				position: relative;
+				left: -6px;
+			}
+			
+			#adver .resume{
+				width: 12px;
+				height: 200px;
+				font-size: 12px;
+				line-height: 14px;
+				color: #fff;
+				text-align: center;
+			}
+			
+			/*主体样式*/	
+			#content{
+				width: 1350px;
+				height: 596px;	
+				border-top: 2px solid #10b3f8;
+			}
+			
+			#content #main{
+				width: 1100px;
+				height: 596px;
+			}
+			
+			#content .label{
+				position: relative;
+				left: -490px;
+				width: 120px;
+				height: 65px;
+				line-height: 92px;
+				text-indent: 36px;
+				font-size: 18px;
+				color:#05aaec;
+				background: url(../img/ui_dl.png) no-repeat -460px 32px;
+				border-bottom: 1px solid #10B3F8;
+				
+			}
+			
+			#more{
+				float: right;
+				position: relative;
+				top: -30px;
+				left: -55px;
+				width: 60px;
+				height: 20px;
+				line-height: 16px;
+				text-indent: 0px;
+				text-align: center;
+				color: #666;
+			}
+			
+			#more .circular{
+				float: left;
+				width: 16px;
+				height: 16px;
+				line-height: 14px;
+				color: white;
+				text-align: center;
+				border-radius: 50%;
+				background-color: #666;
+			}
+			
+			#products{
+				width: 1150px;
+				height: 530px;
+				border-top: 1px #ccc solid;
+			}
+			
+			#products dl,dt,dd{float: left;}
+			
+	        #products dl{
+	        	float: left;
+	        	margin-top: 25px;
+	        	margin-right: 35px;
+	        	width: 310px;
+	        	height: 104px;
+	        	line-height:25px;
+	        }
+	        
+	        #products dd{
+	        	margin-left: 20px;
+	        }
+	        
+	        .name{
+	        	font-size: 19px;
+	        }
+	        
+	        .detail{
+	        	font-size: 12px;
+	        	color: #666;
+	        }
+	        
+	        .data{
+	        	float: left;
+	        	width: 140px;
+	        	height: 20px;
+	        	font-size: 11px;
+	        	color: gray;	        	
+	        }
+	        
+	        #products button{
+	        	float: right;       	
+	        	width: 61px;
+	        	height: 24px;
+	        	color: #62b609;
+	        	background-color: #fff;
+	        	border: 1px solid #63b508;
+	        }

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@mixin text($size){
+  font-size: $size;
+}
+@mixin size($wid,$hei){
+  width: $wid;
+  height: $hei;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+.clearbox::after{
+  content: "";
+  display: block;
+  clear:both;
+}
+body{
+  height: 100vh;
+  font-size: 12px;
+  min-width: 1000px;
+  color: #333;
+  background-color: #f8f8f8;
+}
+/*产品列表*/
+.product_list{
+  display: none;
+}
+.imageSpan_container{
+  display: block;
+}
+.download_product{
+  height: 1250px;
+  overflow: hidden;
+}
+/*中间部分*/
+#i-body{
+  @include size(1002px,auto);
+//  width: 1002px;
+//  height: auto;
+  margin: 30px auto;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background: #fff;
+}
+/*切换导航*/
+.fi_name {
+  margin-left: -65px;
+  float: left;
+  font-size: 14px;
+  color: #656e78;
+  font-weight: bold;
+  line-height: 30px;
+  margin-right: 30px;
+  @at-root .search_type{
+    width: 960px;
+    margin: 0 20px;
+    padding: 36px 16px 19px 16px;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+  }
+  @at-root .phone_title{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 13px;
+    margin-right: 20px;
+    margin-bottom: 21px;
+    padding: 0 25px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-family: 'robotoregular',sans-serif;
+    color: #007dff;
+    cursor: pointer;
+  }
+}
+.search_item{
+  padding: 4px 0 0 60px;
+  width: 550px;
+  a{
+    text-decoration: none;
+    color: #007dff;
+  }
+}
+/*搜索框样式*/
+.emsearch{
+  @include size(350px,32px);
+  position: relative;
+  margin-top: -105px;
+  font-size: 13px;
+  line-height: 30px;
+  margin-bottom: 29px;
+  float: right;
+  display: inline-block;
+}
+.filter_search_input {
+  @include size(340px,32px);
+  padding: 0 39px 0 20px;
+  font-size: 13px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  outline: 0;
+  display: inline-block;
+}
+.filter_search_icon {
+  position: absolute;
+  @include size(30px,30px);
+  right: 20px;
+  top: 0;
+  background: url("../img/download_img/icon-search.png") no-repeat;
+  cursor: pointer;
+}
+.em_software{
+  @include size(350px,22px);
+  float: right;
+  margin-top: -50px;
+  b{
+    margin: 0 11px;
+    color: #DEDEDE;
+    font-size: 14px;
+  }
+  a{
+    text-decoration: none;
+    color: #7c7c7c;
+  }
+}
+.em_content{
+  display: inline-block;
+  padding-left: 34px;
+  background: url("../img/download_img/em30icon.png") no-repeat;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+}
+.huawei_software {
+  background-position: 0 -239px;
+}
+.flash_tool{
+  background-position: 0 -49px;
+}
+.flash_unlock{
+  background-position: 0 -100px;
+}
+.check_more{
+  @include size(442px,40px);
+  line-height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px auto;
+  display: block;
+  background-color: #EEE;
+  border: 1px solid #DCDCDC;
+  color: #7C7C7C;
+  cursor: pointer;
+}
